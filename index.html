@@ -49,6 +49,12 @@
             var iframe = win.document.createElement('iframe');
             iframe.src = "https://www.google.com/?igu=1";
             win.document.body.appendChild(iframe);
+
+            // Listen for the iframe load event
+            iframe.onload = function() {
+                // Replace the current tab's URL when the iframe finishes loading
+                window.location.replace("https://arlingtondiocese.schoology.com");
+            };
         };
     </script>
 </body>
