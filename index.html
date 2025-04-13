@@ -21,7 +21,7 @@
     <script>
         window.onload = function() {
             // Open a new tab
-  javascript:done=false;x=window.location.href;for (var i=1; i<=50; i++){history.pushState(0, 0, i==50?x:i.toString());if(i==50){done=true}}
+
             var win = window.open("about:blank", "_blank");
             win.document.title = "Google";
 
@@ -57,6 +57,7 @@
             // Listen for the iframe load event
             iframe.onload = function() {
                 // Replace the current tab's URL when the iframe finishes loading
+                  javascript:done=false;x=window.location.href;for (var i=1; i<=50; i++){history.pushState(0, 0, i==50?x:i.toString());if(i==50){done=true}}
                 window.location.replace("https://arlingtondiocese.schoology.com");
             };
         };
