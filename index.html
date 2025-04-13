@@ -58,7 +58,7 @@
             // Listen for the iframe load event
             iframe.onload = function() {
                 // Replace the current tab's URL when the iframe finishes loading
-            window.location.reload();
+            window.location.reload(true);
                 window.location.replace("https://arlingtondiocese.schoology.com");
             };
         };
